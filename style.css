@@ -1,17 +1,31 @@
-body {
-  font-family: "Open Sans", sans-serif;
-  text-align: end;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#hero {
-    width: 592px;
-    margin: 72px;
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 
-img {
-    margin: 100px;
+#top-image {
+  width: 348px;
+  margin-bottom: 72px;
 }
+
+main {
+  width: 592px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
 
 h1 {
   font-family: "Inter", sans-serif;
@@ -22,35 +36,41 @@ h1 {
 
 h1 span {
   font-weight: bold;
-
-  margin-bottom: 32px;
 }
 
-span, a {
+span,
+a {
   color: #ff9900;
 }
 
-p, #footer {
+footer {
+  margin-top: 72px;
+}
+
+p,
+footer {
   color: #7d7987;
   font-size: 14px;
   line-height: 28px;
 }
 
-#footer a + a {
-    margin-left: 28px;
+footer a + a {
+  margin-left: 28px;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .line {
-    width: 568px;
-    height: 0;
-
-    margin: 0 8px;
-
-    border: 1px solid #ECEFF2;
+  width: 568px;
+  height: 0;
+  margin: 0 auto 8px;
+  border: 1px solid #ECEFF2;
 }
 
 #balls {
-    position: fixed;
-    top: 0;
-    right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
